@@ -39,7 +39,7 @@ func (r routes) UrlShortner(rg *gin.RouterGroup) {
 		default:
 			orderRouteGrouping.GET(route.Pattern, func(c *gin.Context) {
 				c.JSON(200, gin.H{
-					"result": "Specify a valid http method with this routes.",
+					"result": "Specify a valid http method with this route.",
 				})
 			})
 		}
